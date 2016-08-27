@@ -75,9 +75,14 @@ WSGI_APPLICATION = 'goodstyle.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'goodstyle',
+        'USER': 'goodstyle',
+        'PASSWORD': '1Ak5RTQt7mtw0OREsfPhJYzXIak41gnrm5NWYEosCeIduJck10awIzoys1wvbL8',
+        'HOST': 'localhost',
+        'PORT': '',                      # Set to empty string for default.
     }
+
 }
 
 
