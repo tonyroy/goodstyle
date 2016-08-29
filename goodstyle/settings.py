@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'goodstyle.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'goodstyle',
+        'NAME': os.environ.get("DB_USER", ''),
         'USER': os.environ.get("DB_USER", ''),
         'PASSWORD': os.environ.get("DB_PASSWORD", ''),
         'HOST': 'localhost',
